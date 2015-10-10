@@ -33,11 +33,74 @@ a {
 
 /*MAIN SECTION*/
 
+#main .card-container {
+    padding: 0 20px;
+}
+
 #main .card {
-    max-width: 500px;
+    max-width: 800px;
     margin: 0 auto;
     background: #282828;
     border-radius: 15px;
     padding: 5px 20px;
     margin-top: 45px;
+}
+
+#main img {
+    margin: 0 auto;
+    width: 450px;
+}
+
+#main p {
+    line-height: 30px;
+}
+
+#main .indent {
+    margin-left: 15px;
+}
+
+#main .contact .pure-u-1-6 {
+    width: 100px;
+}
+
+#main .contact .pure-u-5-6 {
+    width: 185px;
+}
+
+#main .contact li, #main .contact p {
+    height: 100px;
+    margin: 0;
+    padding: 0;
+}
+
+#main .contact p {
+    line-height: 100px;
+}
+
+@media screen and (max-width: 1100px) {
+    #main #education, #main #skills {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    #main #about, #main #contact {
+        width: 100%;
+    }
+
+    #main #education, #main #skills {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    #main #education, #main #skills {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    #main #contact-description {
+        display: none;
+    }
 }
